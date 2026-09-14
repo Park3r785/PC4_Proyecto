@@ -7,7 +7,7 @@ intentos = 0
 print("¡Bienvenido al juego de adivinanza!")
 print("He pensado un número del 1 al 100. ¿Puedes adivinar cuál es?")
 
-while True:
+while intentos < 10:
     # El usuario introduce un número
     entrada = input("Escribe tu número: ")
     
