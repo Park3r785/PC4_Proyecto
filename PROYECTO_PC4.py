@@ -12,7 +12,7 @@ while intentos < 10:
     entrada = input("Escribe tu número: ")
     
     # Comprobamos que sea un número válido
-    if not entrada.isdigit():
+    if not entrada.isdigit() or not (1 <= int(entrada) <= 100):
         print("Por favor, escribe un número válido.")
         continue
         
