@@ -27,3 +27,5 @@ while intentos < 10:
     else:
         print(f"¡Felicidades! Adivinaste el número en {intentos} intentos.")
         break
+else:
+    print(f"Lo siento, has agotado tus intentos. El número secreto era {numero_secreto}.")
