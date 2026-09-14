@@ -21,9 +21,15 @@ while intentos < 10:
     
     # Comparamos el número ingresado con el secreto
     if intento < numero_secreto:
-        print("El número secreto es más alto.")
+        if abs(intento - numero_secreto) <= 5:
+            print("El número secreto es más alto. ¡Estás muy cerca!")
+        else:
+            print("El número secreto es más alto.")
     elif intento > numero_secreto:
-        print("El número secreto es más bajo.")
+        if abs(intento - numero_secreto) <= 5:
+            print("El número secreto es más bajo. ¡Estás muy cerca!")
+        else:
+            print("El número secreto es más bajo.")
     else:
         print(f"¡Felicidades! Adivinaste el número en {intentos} intentos.")
         break
